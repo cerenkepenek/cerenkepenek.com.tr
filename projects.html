@@ -2,97 +2,129 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - Ceren Kepenek</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ceren Kepenek</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #1f1b2a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 25px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 750;
+        }
+
+        .navbar a {
+            font-size: 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: .3s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: #c760b3;
+        }
+
+        .projects {
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        .project-item {
+            margin-bottom: 50px;
+        }
+
+        .project-title {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .github-link {
+            font-size: 16px;
+            color: #c760b3;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .github-link:hover {
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
-  <header class="header">
-    <a href="#" class="logo">Cereen</a>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="aboutme.html">About Me</a>
-      <a href="hobbies.html">Hobbies</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <header class="header">
+        <a href="#" class="logo">Cereen</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-  <section class="projects">
-    <div class="projects-content">
-      <h1>Projects</h1>
-      <p>Burada projeleriniz veya çalışmalarınız hakkında bilgi verebilirsiniz...</p>
+    <section class="projects">
+        <div class="project-item">
+            <h2 class="project-title">Oto-Sepet</h2>
+            <p class="project-description">
+              The Oto-Sepet project has been developed using the C# programming language. This application is specifically designed for use by car rental companies. Oto-Sepet provides users with various features such as adding and deleting vehicles, as well as daily, weekly, and monthly rental rates. Developed to simplify and manage car rental processes, this application aims to be an effective tool in the industry. The project's goal is to carry out vehicle rental operations more efficiently and user-friendly, while also assisting rental companies in better managing their daily operations.
+            </p>
+            <a href="https://github.com/cerenkepenek/Oto-Sepet" class="github-link" target="_blank">GitHub Project Link</a>
+        </div>
+
+
+        <div class="project-item">
+          <h2 class="project-title">C-Shopping</h2>
+          <p class="project-description">
+            C-Shopping is a shopping application developed using Flutter. This application provides jewelers and jewelry sellers with the opportunity to showcase and sell their jewelry. C-Shopping aims to offer a unique shopping experience to jewelry enthusiasts.
+          </p>
+          <a href="https://github.com/cerenkepenek/c_shopping" class="github-link" target="_blank">GitHub Project Link</a>
+      </div>
+
+      <div class="project-item">
+        <h2 class="project-title">BMI-Calculator</h2>
+        <p class="project-description">
+            
+BMI-Calculator is a mobile application developed using Flutter. This app provides a tool for users to measure their health by performing BMI (Body Mass Index) calculations. BMI Calculator calculates the body mass index based on the user's height and weight, offering general information about their health status.
+        </p>
+        <a href="https://github.com/cerenkepenek/bmi_calculator" class="github-link" target="_blank">GitHub Project Link</a>
     </div>
-  </section>
+       
 
-  <style>
-    body {
-      background: #1f1b2a;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 20px 10%;
-      background: transparent;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100;
-    }
-
-    .logo {
-      font-size: 25px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 750;
-    }
-
-    .navbar a {
-      font-size: 15px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      margin-left: 35px;
-      transition: .3s;
-    }
-
-    .navbar a:hover,
-    .navbar a.active {
-      color: #c760b3;
-    }
-
-    .projects {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: calc(100vh - 80px);
-      padding: 20px;
-      text-align: center;
-    }
-
-    .projects-content h1 {
-      font-size: 50px;
-      font-weight: 700;
-      line-height: 1.2;
-    }
-
-    .projects-content p {
-      font-size: 15px;
-      margin: 20px 0 40px;
-    }
-  </style>
-
+    </section>
 </body>
 
 </html>

@@ -55,7 +55,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            padding: 150px;
+            padding: 20px;
         }
 
         .gallery-item {
@@ -67,7 +67,7 @@
         }
 
         .gallery-item img {
-            max-width: 400px;
+            max-width: 600px;
             width: 100%;
             height: auto;
             border-radius: 10px;
@@ -76,6 +76,23 @@
 
         .gallery-item:hover {
             transform: scale(1.05);
+        }
+
+        .sports-info {
+            text-align: center;
+            margin-top: 100px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .sports-info h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .sports-info p {
+            font-size: 18px;
+            margin: 0;
         }
     </style>
 </head>
@@ -92,6 +109,15 @@
         </nav>
     </header>
 
+    <div class="sports-info">
+        <h1>My Sports Gallery</h1>
+        <div style="text-align: justify;">
+       
+           <p>Trying out different sports has become a passion for me. I'm new to Street lifting and Powerlifting. Watching a street lifting competition in Italy further fueled my interest in these sports and motivated me. I used to engage in street lifting on a smaller scale before, but now I've also stepped into Powerlifting.</p>
+   <p>I've embarked on an exciting journey to gain new experiences and improve myself in the enchanting world of sports.</p>
+   <p>Each workout, each lift motivates me even more and boosts my self-confidence.</p>
+        </div>
+</div>
     <section class="gallery">
         <div class="gallery-item">
             <img src="images/bar1.jpg" alt="Sports Photo 1">
@@ -109,9 +135,11 @@
             <img src="images/deadlift1.jpg" alt="Sports Photo 5">
         </div>
         <div class="gallery-item">
-            <img src="images/deadlift2.jpg" alt="Sports Photo 6">
+            <img src="images/deadlift2.png" alt="Sports Photo 6">
         </div>
     </section>
+
+
 </body>
 
 </html>

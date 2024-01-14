@@ -88,6 +88,7 @@
       margin: 20px;
       width: calc(33.33% - 40px);
       position: relative;
+      cursor: pointer;
     }
 
     .hobby-item::before {
@@ -110,7 +111,8 @@
       transform: translate(-50%, -50%);
       z-index: 1;
       color: white;
-      font-size: 20px; /* Büyütülen font-size */
+      font-size: 100px;
+      /* Büyütülen font-size */
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
       opacity: 0;
@@ -145,43 +147,31 @@
 
   <section class="hobbies">
     <div class="hobbies-content">
-     
+
       <div class="hobbies-images">
-        <div class="hobby-item">
-          <a href="sport.html" target="_blank">
+        <div class="hobby-item" onclick="window.location='sport.html';">
             <img src="images/paten.jpg" alt="Hobby 1">
             <p class="hobby-description">Sport</p>
-          </a>
         </div>
-        <div class="hobby-item">
-          <a href="trekking.html" target="_blank">
+        <div class="hobby-item" onclick="window.location='trekking.html';"">
             <img src="images/walking.jpg" alt="Hobby 2">
             <p class="hobby-description">Trekking & Hiking</p>
-          </a>
         </div>
-        <div class="hobby-item">
-          <a href="makeup.html" target="_blank">
+        <div class="hobby-item" onclick="window.location='makeup.html';">
             <img src="images/makeup.jpg" alt="Hobby 3">
             <p class="hobby-description">Make Up & Hair</p>
-          </a>
         </div>
-        <div class="hobby-item">
-          <a href="art.html" target="_blank">
-            <img src="images/art.jpg" alt="Hobby 4">
+        <div class="hobby-item" onclick="window.location='art.html';">
+            <img src="images/art2.jpg" alt="Hobby 4">
             <p class="hobby-description">Art</p>
-          </a>
         </div>
-        <div class="hobby-item">
-          <a href="cooking.html" target="_blank">
+        <div class="hobby-item" onclick="window.location='cooking.html';">
             <img src="images/cake.jpg" alt="Hobby 5">
             <p class="hobby-description">Cooking</p>
-          </a>
         </div>
-        <div class="hobby-item">
-          <a href="nailart.html" target="_blank">
+        <div class="hobby-item" onclick="window.location='nailart.html';">
             <img src="images/nailart.jpg" alt="Hobby 6">
             <p class="hobby-description">Nail Art</p>
-          </a>
         </div>
       </div>
     </div>

@@ -2,97 +2,105 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Ceren Kepenek</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ceren Kepenek</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #1f1b2a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 25px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 750;
+        }
+
+        .navbar a {
+            font-size: 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: .3s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: #c760b3;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px);
+        }
+
+        .contact-icons a {
+            margin: 20px;
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .contact-icons a:hover {
+            color: #c760b3;
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 
 <body>
-  <header class="header">
-    <a href="#" class="logo">Cereen</a>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="aboutme.html">About Me</a>
-      <a href="hobbies.html">Hobbies</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
+    <header class="header">
+        <a href="#" class="logo">Cereen</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
 
-  <section class="contact">
-    <div class="contact-content">
-      <h1>Contact</h1>
-      <p>Bana ulaşmak için aşağıdaki bilgileri kullanabilirsiniz...</p>
-    </div>
-  </section>
+    <section class="contact-icons">
+        <a href="https://www.linkedin.com/in/cerenkepenek/" target="_blank">
+            <span class="icon">🔗</span> LinkedIn
+        </a>
 
-  <style>
-    body {
-      background: #1f1b2a;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+        <a href="https://www.instagram.com/3cereen" target="_blank">
+            <span class="icon">📷</span> Instagram
+        </a>
 
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 20px 10%;
-      background: transparent;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100;
-    }
-
-    .logo {
-      font-size: 25px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 750;
-    }
-
-    .navbar a {
-      font-size: 15px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      margin-left: 35px;
-      transition: .3s;
-    }
-
-    .navbar a:hover,
-    .navbar a.active {
-      color: #c760b3;
-    }
-
-    .contact {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: calc(100vh - 80px);
-      padding: 20px;
-      text-align: center;
-    }
-
-    .contact-content h1 {
-      font-size: 50px;
-      font-weight: 700;
-      line-height: 1.2;
-    }
-
-    .contact-content p {
-      font-size: 15px;
-      margin: 20px 0 40px;
-    }
-  </style>
-
+        <a href="mailto:cerenkepenek7@gmail.com">
+            <span class="icon">✉️</span> Email
+        </a>
+    </section>
 </body>
 
 </html>

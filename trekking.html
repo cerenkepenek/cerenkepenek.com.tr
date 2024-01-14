@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trekking Gallery - Ceren Kepenek</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #1f1b2a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 25px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 750;
+        }
+
+        .navbar a {
+            font-size: 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: .3s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: #c760b3;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .trekking-info {
+            text-align: center;
+            margin-top: 100px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .trekking-info h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .trekking-info p {
+            font-size: 18px;
+            margin: 0;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Cereen</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="hobbies.html" class="active">Hobbies</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="trekking-info">
+        <h1>My Trekking Adventures</h1>
+        <div style="text-align: justify;">
+            <p>Exploring nature through trekking is one of my favorite hobbies. I have had the opportunity to trek in various breathtaking locations, experiencing the beauty of mountains, forests, and trails.</p>
+            <p>Each trekking adventure brings a sense of tranquility and connection with the natural world. It's a journey of self-discovery and a way to escape the hustle and bustle of daily life.</p>
+            <p>Join me in reliving these moments through the trekking gallery below.</p>
+        </div>
+    </div>
+
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="images/antalya1.jpg" alt="Trekking Photo 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/burgazada1.jpg" alt="Trekking Photo 2">
+        </div>
+        <div class="gallery-item">
+            <img src="images/opole1.jpg" alt="Trekking Photo 3">
+        </div>
+        <div class="gallery-item">
+            <img src="images/opole2.jpg" alt="Trekking Photo 4">
+        </div>
+        <div class="gallery-item">
+            <img src="images/opole3.jpg" alt="Trekking Photo 5">
+        </div>
+        <div class="gallery-item">
+            <img src="images/opole4.jpg" alt="Trekking Photo 6">
+        </div>
+    </section>
+</body>
+
+</html>
