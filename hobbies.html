@@ -7,27 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hobbies - Ceren Kepenek</title>
   <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <header class="header">
-    <a href="#" class="logo">Cereen</a>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="aboutme.html">About Me</a>
-      <a href="hobbies.html" class="active">Hobbies</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <section class="hobbies">
-    <div class="hobbies-content">
-      <h1>Hobbies</h1>
-      <p>Hobilerim arasında yazılım, kitap okuma ve spor bulunmaktadır. Kendimi bu alanlarda geliştirmeye çalışıyorum...</p>
-    </div>
-  </section>
-
   <style>
     body {
       background: #1f1b2a;
@@ -78,7 +57,12 @@
       align-items: center;
       height: calc(100vh - 80px);
       padding: 20px;
-      text-align: center;
+      text-align: left;
+    }
+
+    .hobbies-content {
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     .hobbies-content h1 {
@@ -88,11 +72,120 @@
     }
 
     .hobbies-content p {
-      font-size: 15px;
+      font-size: 25px;
       margin: 20px 0 40px;
     }
-  </style>
 
+    .hobbies-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 150px;
+    }
+
+    .hobby-item {
+      text-align: center;
+      margin: 20px;
+      width: calc(33.33% - 40px);
+      position: relative;
+    }
+
+    .hobby-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 10px;
+    }
+
+    .hobby-description {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      color: white;
+      font-size: 20px; /* Büyütülen font-size */
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .hobby-item:hover::before,
+    .hobby-item:hover .hobby-description {
+      opacity: 1;
+    }
+
+    .hobby-item img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Cereen</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="hobbies.html" class="active">Hobbies</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hobbies">
+    <div class="hobbies-content">
+     
+      <div class="hobbies-images">
+        <div class="hobby-item">
+          <a href="sport.html" target="_blank">
+            <img src="images/paten.jpg" alt="Hobby 1">
+            <p class="hobby-description">Sport</p>
+          </a>
+        </div>
+        <div class="hobby-item">
+          <a href="trekking.html" target="_blank">
+            <img src="images/walking.jpg" alt="Hobby 2">
+            <p class="hobby-description">Trekking & Hiking</p>
+          </a>
+        </div>
+        <div class="hobby-item">
+          <a href="makeup.html" target="_blank">
+            <img src="images/makeup.jpg" alt="Hobby 3">
+            <p class="hobby-description">Make Up & Hair</p>
+          </a>
+        </div>
+        <div class="hobby-item">
+          <a href="art.html" target="_blank">
+            <img src="images/art.jpg" alt="Hobby 4">
+            <p class="hobby-description">Art</p>
+          </a>
+        </div>
+        <div class="hobby-item">
+          <a href="cooking.html" target="_blank">
+            <img src="images/cake.jpg" alt="Hobby 5">
+            <p class="hobby-description">Cooking</p>
+          </a>
+        </div>
+        <div class="hobby-item">
+          <a href="nailart.html" target="_blank">
+            <img src="images/nailart.jpg" alt="Hobby 6">
+            <p class="hobby-description">Nail Art</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>

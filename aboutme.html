@@ -23,8 +23,39 @@
 
   <section class="about">
     <div class="about-content">
-      <h1>About Me</h1>
-      <p>Merhaba, ben Ceren Kepenek. Yazılım mühendisliği öğrencisiyim. Kendim hakkında daha fazla bilgi ver...</p>
+      <div class="about-text">
+        <h1>About Me</h1>
+        <div style="text-align: justify;">
+          <p>
+            Hello! I'm Ceren Kepenek. I was born on November 2, 2002, in the beautiful lands of Kocaeli, Turkey. I
+            completed my education from elementary school to high school in Kocaeli. Currently, I am a senior student in
+            the Department of Information Systems and Technologies at Istanbul Okan University, and I am also pursuing a
+            double major in Software Engineering.
+          </p>
+          <p>
+            As of now, I am taking part in the Erasmus program in Poland at Opole University of Technology. This
+            experience adds significant richness to both my academic and cultural perspectives.
+          </p>
+          <p>
+            While creating my website, I aim to share information about my projects and content. Throughout this
+            process, I highlight my curiosity in the world of software and my passion for learning, continuing to
+            explore the power of technology.
+          </p>
+          <p>
+            As a personal note, I have a cute bird named "Lemon." I love animals, and my favorite color is blue. I
+            continue to enhance my skills in this field by blending my colorful world with technology.
+          </p>
+          <p>
+            On my website, I will share this exciting journey and my projects. I hope you have the opportunity to get to
+            know me better on this platform. Thank you!
+          </p>
+        </div>
+        <pre lang="html">
+
+      </div>
+    </div>
+    <div class="about-image">
+      <img src="images/aboutme.jpg" alt="Ceren Kepenek">
     </div>
   </section>
 
@@ -76,9 +107,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: calc(100vh - 80px);
-      padding: 20px;
-      text-align: center;
+      height: calc(100vh - 10px);
+      padding: 100px;
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about-text {
+      text-align: left;
+      margin-right: 20px;
     }
 
     .about-content h1 {
@@ -89,7 +133,17 @@
 
     .about-content p {
       font-size: 15px;
-      margin: 20px 0 40px;
+      margin: 20px 0;
+    }
+
+    .about-image {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .about-image img {
+      width: 50%; /* Genişliği isteğiniz değere ayarlayabilirsiniz */
+      border-radius: 20px; /* İstediğiniz bir kenar yuvarlaklık değeri */
     }
   </style>
 
